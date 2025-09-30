@@ -23,7 +23,7 @@ jobs:
           pip install pytest
 
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q
 
   docker-build:
     needs: build-test
@@ -34,4 +34,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t hello-devops:ci .
-
