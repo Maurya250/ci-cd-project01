@@ -6,6 +6,7 @@ on:
 
 jobs:
   build-test:
+    
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -25,6 +26,7 @@ jobs:
         run: pytest -q
 
   docker-build:
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
@@ -32,3 +34,4 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t hello-devops:ci .
+
