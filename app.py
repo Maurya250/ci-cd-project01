@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello DevOps"
+    return "Hello, my name is Aniket. I am passionate about technology and currently focusing on DevOps and Cybersecurity. I enjoy working on real-world projects, learning step by step, and applying my knowledge to practical solutions. I believe in continuous learning and growth"
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
