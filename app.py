@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "I see you every day—your smile, your laugh, the way you move—it all stays in my eyes, in my mind. Yet, I never find the courage to speak. Every time I see you close by, my heart races, but my lips remain silent. It feels like just watching you is enough for me, even if I can’t say a word. In front of you, I become a quiet shadow, but inside, my thoughts are full of you. Maybe one day I’ll find the courage to tell you what’s in my heart, but for now, just seeing you, just being near you in silence, "
+    return "I tried to eat healthy today, but my salad accidentally came with a side of pizza, fries, and a Coke. Then the gym called and asked if I was coming, and I told them, “Sorry, I’m in a committed relationship with my bed right now.” Honestly, if laziness was an Olympic sport, I’d still come in second—because I’d be too lazy to show up for the finals. "
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=5000, debug=True)
 

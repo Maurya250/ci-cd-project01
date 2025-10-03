@@ -4,6 +4,6 @@ def test_hello():
     client = app.test_client()
     res = client.get('/')
     assert res.status_code == 200
-    assert b'I see you every ' in res.data
-    assert b'my heart races' in res.data
-    assert b'is the loudest way my feelings ' in res.data
+    assert b'I tried to eat healthy' in res.data
+    assert b'if laziness was an Olympic' in res.data
+    assert b'd be too lazy to show ' in res.data
